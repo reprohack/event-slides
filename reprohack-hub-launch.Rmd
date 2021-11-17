@@ -43,14 +43,13 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#46CC97",
 
 #### _Anna, Daniela, Florencia, Linda, Ricci_
 
-
-
 ***
 
 ### Event Page: [bit.ly/reprohack-hub-launch](https://bit.ly/reprohack-hub-launch)
 
 Contains all event information and links to materials
 
+### `r icons::fontawesome("twitter")` #ReproHackHub @ReproHack
 
 ---
 background-image: url("assets/reprohack-hub-screenshot.png")
@@ -197,7 +196,7 @@ class: inverse
 <!-- Open it up to participants -->
 # Your turn
 
-### in break-out rooms (7 mins)
+### in break-out rooms (5 mins)
 
 > - ### Who are you?
 
