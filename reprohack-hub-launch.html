@@ -39,9 +39,32 @@ Contains all event information and links to materials
 
 ### &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; #ReproHackHub @ReproHack
 
+
+???
+
+Welcome everyone on behalf of the whole ReproHack team!
+
+So, not all of us could sadly be here today, but you have got myself, as well as Linda Nab, who'm you'll hear a bit more from shortly.
+
+I hope you've signed into the hackpad which has a lot of information, as does our event page. Both links should be in the chat.
+
+Which brings us to why we are all here today.
+
+So yes, we will be ReproHacking, so **working with code and data to try and reproduce** submitted papers.
+
 ---
 background-image: url("assets/reprohack-hub-screenshot.png")
 background-size: contain
+
+???
+
+But what's what really special about today's event is that, for the first time, we'll be using our purpose built ReproHack Hub.
+
+Right from the start of the project, we'd get requests from people that wanted to run their own events and we had tried really hard to create templates and make the infrastructure we used reproducible. 
+
+But it was still complicated, a lot of moving parts, held together with a lot duck tape. We always wanted a centralised hub that provided all the required infrastructure so that event organisers (including ourselves) but also authors submitting papers or participants submitting reviews, would find it easy to do what they needed to do and focus on the experience itself.
+
+It took a lot longer than we hoped but we are really so excited to share with you what we've created. 
 
 
 ---
@@ -56,12 +79,20 @@ _N8 Centre of Excellence in Computationally Intensive Research_
 &lt;img src="assets/2020_11_10_cir_cmyk.png" width="50%" /&gt;
 
 
+???
 
+I want to take the opportunity upfront to thank the N8 CIR, 
+
+they've been firm supporters from early on, sponsored a number of previous events and also provided funding for developer time that got the hub off the ground so we really couldn't have  gotten here without their support.
 
 ---
 class: inverse, center, middle
 
 # Agenda
+
+???
+
+OK I'll do a quick blast through the agenda,
 
 ---
 
@@ -81,6 +112,16 @@ class: inverse, center, middle
 - **COFFEE BREAK** 
 - Work on papers 
 
+???
+
+
+This morning, after some housekeeping and an Ice breaker, we'll be hearing from Dr. Esther Plomp about the Turing Way Community.
+
+I'll follow on with some tips and tricks for reproducing and then we'll dive straight in and start exploring, selecting and then beginning work on our papers.
+
+
+
+
 ---
 
 ### Lunchtime
@@ -91,6 +132,12 @@ class: inverse, center, middle
 
 ***13:45 Reprohack Round II***
 - Work on papers (break-out rooms)
+
+???
+
+We'll regroup before lunch to share how we're getting on and then break for an hour at 12:45
+
+After lunch we carry on ReproHacking
 
 ---
 
@@ -109,17 +156,34 @@ class: inverse, center, middle
 
 **16:50 Closing**
 
+???
+
+In te afternoon, remember to take a coffee break and also submit your reviews by the end of the day.
+
+At 4pm, we'll rejoin to hear from Stephen Eglen on the Code Check project.
+
+We'll close by sharing our final thoughts about the experience followed by some closing remarks.
 
 ---
 class: inverse
 
 # House Keeping:
 
+
+???
+
+So some quick housekeeping
+
 ***
 
 ## Tour of Blackboard Collaborate
 
 &gt; ### Linda Nab
+
+
+???
+
+I'll hand over to Linda who will give you a quick tour of blackboard collaborate.
 
 ---
 
@@ -129,6 +193,9 @@ class: inverse
 &lt;img src="assets/hackmd.png" width="90%" /&gt;
 
 
+???
+
+As I've mentioned, we're also using a hackpad, specifically a hackmd hackpad. So this pad understands markdown, which is the text shown on the left and it is rendered on the right. If you are not familiar with markdown, don't worry too much, just use it as a plain text editor or you can have a quick look at hack md documentation, there's a link at the top of the hackpad.
 
 ---
 class: inverse
@@ -139,6 +206,11 @@ class: inverse
 &lt;!-- Use this section as an ice-breaker. Introduce yourself, then allow others to 
 go around the room and introduce themselves too --&gt;
 
+???
+
+Now we're going to do a quick round of intriductions, and I'll put you in smaller break out groups and there's three questions Id like you to answer.
+
+I'll go first:
 ---
 
 &lt;!-- Add details about yourself the organiser here: --&gt;
@@ -161,6 +233,10 @@ go around the room and introduce themselves too --&gt;
 
 &gt; I believe there's lots to learn about Reproducibility from working with other people's materials and engaging with real published research code and data.
 
+
+???
+
+- I feel very strongly that working with these resources is a really powerful working experience. But also that if we don't engage with the materials, we (the authors who have put all this effort in included) won't really know if they are actually reproducible and therefore fit for purpose.
 ---
 
 ## Who is my favorite animated character?
@@ -169,6 +245,9 @@ go around the room and introduce themselves too --&gt;
 &gt;
 &gt; ![](https://media3.giphy.com/media/95MU6SEzeLnUc/giphy.gif?cid=790b76115d11033236595055776d483b&amp;rid=giphy.gif)
 
+???
+
+I think he's cute and my friends think that's who I turn into after I've had a couple of strong ciders!
 
 ---
 class: inverse
@@ -188,11 +267,21 @@ class: inverse
 
 &gt; - ### Who is your favorite animated character?
 
+???
+
+OK, so it's your turn now, I'm going to put you into break out groups where you'll have 5 minutes to answer these 3 questions amongst yourself.
+
 --
 
 ### As a group
 
 &gt; ### Name your room! 🏔🏕🏜🎢🏞🏟🏰🗼🌅🏝
+
+???
+
+As I group, for a bit of fun, also decide on a name for the room your group and record it in the hackpad. When we come back Linda will rename them for you.
+
+Please be back in 5 mins sharp for our first talk.
 
 
 ---
@@ -498,7 +587,7 @@ class: inverse, center, middle
 
 # Participant Guidelines
 
-## [reprohack.org/participant_guidelines](https://www.reprohack.org/participant_guide)lines
+### [reprohack.org/participant_guidelines](https://www.reprohack.org/participant_guide)lines
 
 
 ---
@@ -536,8 +625,8 @@ class: inverse
 ### 👥 Team formation / project registration
 
 + Fine to work individually
-+ Add your details to the [**hackpad: bit.ly/remote-reprohack-hackpad**](https://bit.ly/remote-reprohack-hackpad).
-+ Register your team and paper on the [**hackpad: bit.ly/remote-reprohack-hackpad**](https://bit.ly/remote-reprohack-hackpad)
++ Add your details to the [**hackpad: bit.ly/reprohack-hub-launch-hackpad**](https://bit.ly/reprohack-hub-launch-hackpad).
++ Register your team and paper on the [**hackpad: bit.ly/reprohack-hub-launch-hackpad**](https://bit.ly/reprohack-hub-launch-hackpad)
 
 ### 🏠☕Grab a coffee! 
 
