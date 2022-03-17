@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the HPC ReproHack<br><img src='https://github.com/reprohack/reprohack-hq/raw/master/hex/reprohack.png' height=200px>"
-author: "<br>**Please Sign in on the Hackpad:** <br>_bit.ly/reprohack-hub-launch-hackpad_"
+author: "<br>**Please Sign in on the Hackpad:** <br>_bit.ly/hpc-reprohack-hackpad_"
 output:
   xaringan::moon_reader:
     css: [assets/css/reprohack-themer.css]
@@ -34,14 +34,15 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#46CC97",
 ```
 
 
-## Welcome to the ReproHack Hub Launch!
+## Welcome to the 1st ReproHack Hub Launch!
 
 <!-- Put the link to this slide here so people can follow -->
 
+<br>
 
-### `r emo::ji("wave")` from the whole ReproHack team
+### `r emo::ji("wave")` from the organising team
 
-#### _Anna, Daniela, Florencia, Linda, Ricci_
+#### _David & Anna_
 
 ***
 
@@ -65,9 +66,25 @@ Which brings us to why we are all here today.
 So yes, we will be ReproHacking, so **working with code and data to try and reproduce** submitted papers.
 
 ---
-background-image: url("assets/reprohack-hub-screenshot.png")
-background-size: contain
 
+> # Reprohack:
+> #### Sandbox Environment for Practicing Research Reproducibility
+
+--
+
+> one day events using participants' laptops
+
+
+<br>
+
+Traditional format **excludes the examination of the reproducibility of computationally intensive research!**
+
+--
+
+# Enter the 1st HPC ReproHack
+
+
+ 
 ???
 
 But what's what really special about today's event is that, for the first time, we'll be using our purpose built ReproHack Hub.
@@ -82,13 +99,17 @@ It took a lot longer than we hoped but we are really so excited to share with yo
 ---
 class: center, middle
 
-# Thank you N8 CIR
+# Thank you! 
 
-_N8 Centre of Excellence in Computationally Intensive Research_
+## EPSRC for funding
 
-### <https://n8cir.org.uk/>
+## Sulis for Compute Power
 
-```{r, echo=FALSE, out.width="50%"}
+#### _and **David Quigley** for securing the funding_
+
+
+
+```{r, echo=FALSE, out.width="30%"}
 knitr::include_graphics("assets/2020_11_10_cir_cmyk.png")
 ```
 
