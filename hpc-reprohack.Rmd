@@ -1,9 +1,9 @@
 ---
-title: "Welcome to the HPC ReproHack<br><img src='https://github.com/reprohack/reprohack-hq/raw/master/hex/reprohack.png' height=200px>"
+title: "Welcome to the HPC ReproHack<br><img src='assets/hex-logo-small.png' height=200px>"
 author: "<br>**Please Sign in on the Hackpad:** <br>_bit.ly/hpc-reprohack-hackpad_"
 output:
   xaringan::moon_reader:
-    css: [assets/css/reprohack-themer.css]
+    css: [assets/css/reprohack-themer.css, assets/css/hpc-custom-styles.css]
     lib_dir: libs
     nature:
       titleSlideClass: ["left"]
@@ -20,7 +20,7 @@ class: inverse
 ```{r xaringan-themer, include = FALSE}
 library(xaringanthemer)
 
-style_duo_accent(primary_color = "#2D896B", secondary_color = "#46CC97",
+style_duo_accent(primary_color = "#2D896B", secondary_color = "#02CC98",
                   base_font_size = "18px",
   header_font_google = google_font("Poppins", "500"),
   text_font_google   = google_font("Work Sans", "400", "400i"),
@@ -42,11 +42,11 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#46CC97",
 
 ### `r emo::ji("wave")` from the organising team
 
-#### _David & Anna_
+#### _David Quigley & Anna Krystalli_
 
 ***
 
-### Event Page: [bit.ly/reprohack-hub-launch](https://bit.ly/reprohack-hub-launch)
+### Event Page: [bit.ly/hpc-reprohack-hub](https://bit.ly/hpc-reprohack)
 
 Contains all event information and links to materials
 
@@ -103,15 +103,17 @@ class: center, middle
 
 ## EPSRC for funding
 
+
+
+```{r, echo=FALSE, out.width="30%"}
+knitr::include_graphics("assets/EPSRC_logo.png")
+```
+
+
 ## Sulis for Compute Power
 
 #### _and **David Quigley** for securing the funding_
 
-
-
-```{r, echo=FALSE, out.width="30%"}
-knitr::include_graphics("assets/2020_11_10_cir_cmyk.png")
-```
 
 
 ???
@@ -131,67 +133,53 @@ OK I'll do a quick blast through the agenda,
 
 ---
 
-### Morning
+# HPC ReproHack Launch 
 
-**10:00 Welcome**
-- **Intro to Blackboard Collaborate**
-- Ice breaker (split into rooms)
-
-**10:20 `r emo::ji("loudspeaker")` Dr. Esther Plomp** ***The Turing Way Community*** 
-
-**10:45 Introduction & tips for reviewing**
+### 21st March
 
 
-***11:10 Reprohack Round I***
-- **Review list, form groups, select papers (break-out rooms)**
-- **COFFEE BREAK** 
-- Work on papers 
-
-???
-
-
-This morning, after some housekeeping and an Ice breaker, we'll be hearing from Dr. Esther Plomp about the Turing Way Community.
-
-I'll follow on with some tips and tricks for reproducing and then we'll dive straight in and start exploring, selecting and then beginning work on our papers.
-
-
+| Time 	| Event 	|
+|---	|---	|
+| 10:00 - 10:15 	| **Anna Krystalli:** Welcome, Introduction to event. 	|
+| 10:15 - 10:40 	| **Martin Callaghan:** HPC in the age of Data Science 	|
+| 10:40 - 11:30 	| **Twin Karmakharm:** Reproducibility on HPC 	|
+| 11:30 - 11:45 	| COFFEE 	|
+| 11:45 - 12:10 	| **Heather Ratcliffe:** Introduction to Sulis 	|
+| 12:10 - 12:35 	| **Mike Croucher:** Reproducible MATLAB on HPC 	|
+| 12:35 - 12:55 	| **Mozhgan Kabiri Chimeh:** NVIDIA AI & HPC Containers 	|
+| 13:00 - 14:00 	| LUNCH 	|
+| 14:00 - 14:20 	| **Anna Krystalli:** Introduction to ReproHacking 	|
+| 14:20 - 17:00 	| Initial ReproHack Session 	|
 
 
 ---
 
-### Lunchtime
+# HPC ReproHack 
 
-**12:30 Regroup: get someone from each group to tell us a bit about their experiences.**
+### Drop in sessions
 
-**12:45 LUNCH BREAK**
-
-***13:45 Reprohack Round II***
-- Work on papers (break-out rooms)
-
-???
-
-We'll regroup before lunch to share how we're getting on and then break for an hour at 12:45
-
-After lunch we carry on ReproHacking
+| Date 	| Time 	| Event 	|
+|---	|---	|---	|
+| 22nd March 	| 14:00 - 16:00 	| Drop In support session 	|
+| 24th March 	| 14:00 - 16:00	| Drop In support session 	|
+| 28th March 	| 14:00 - 16:00 	| Drop In support session 	|
+| 30th March 	| 14:00 - 16:00 	| Drop In support session 	|
 
 ---
 
-### Afternoon
-***Reprohack Round III***
+# HPC ReproHack 
 
-- Work on papers (break-out rooms)
-- 14:45 COFFEE BREAK `r emo::ji("house")` `r emo::ji("coffee")`
-- Work on papers - **Complete feedback form**
+### Closing sessions
 
-**16:00 `r emo::ji("loudspeaker")` Prof. Stephen Eglen -** ***Sharing Reproducible Computational Environments with Binder***
-
-**16:25 Regroup - get someone from each group to tell us a bit about their experiences.**
+| Date 	| Time 	| Event 	|
+|---	|---	|---	|
+| 31st March 	| 10:00 - 13:00 	| Closing Event 	|
 
 
-
-**16:50 Closing**
 
 ???
+
+
 
 In te afternoon, remember to take a coffee break and also submit your reviews by the end of the day.
 
@@ -209,16 +197,7 @@ class: inverse
 
 So some quick housekeeping
 
-***
 
-## Tour of Blackboard Collaborate
-
-> ### Linda Nab
-
-
-???
-
-I'll hand over to Linda who will give you a quick tour of blackboard collaborate.
 
 ---
 
@@ -287,16 +266,11 @@ I'll go first:
 I think he's cute and my friends think that's who I turn into after I've had a couple of strong ciders!
 
 ---
-class: inverse
-
-# Let's hear from the ReproHack Team!
-
----
 
 <!-- Open it up to participants -->
 # Your turn
 
-### in break-out rooms (5 mins)
+### in small groups (5 mins)
 
 > - ### Who are you?
 
@@ -308,28 +282,92 @@ class: inverse
 
 OK, so it's your turn now, I'm going to put you into break out groups where you'll have 5 minutes to answer these 3 questions amongst yourself.
 
---
+---
+class: inverse
 
-### As a group
+## Welcome back!
 
-> ### Name your room! `r emo::ji("snow-capped mountain")``r emo::ji("camping")``r emo::ji("desert")``r emo::ji("roller_coaster")``r emo::ji("national_park")``r emo::ji("stadium")``r emo::ji("castle")``r emo::ji("Tokyo_tower")``r emo::ji("sunrise")``r emo::ji("desert_island")`
+***
 
-???
-
-As I group, for a bit of fun, also decide on a name for the room your group and record it in the hackpad. When we come back Linda will rename them for you.
-
-Please be back in 5 mins sharp for our first talk.
-
+# Talks
 
 ---
 class: inverse
 
-## `r emo::ji("loudspeaker")` Dr. Esther Plomp
-#### _Data Steward of the Faculty of Applied Sciences at TU Delft, Netherlands. _
+## `r emo::ji("loudspeaker")` Martin Callaghan  
+
+#### _Research Computing Consultant and part of the Research Computing group at the University of Leeds_
 
 <br>
 
-> ### *"The Turing Way Community"*
+> ### *"HPC in the age of Data Science"*
+
+
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+## `r emo::ji("loudspeaker")` Twin Karmakharm
+### _Research Software Engineer, University of Sheffield._
+
+<br>
+
+> # *"Reproducibility on HPC"*
+
+---
+class: center, middle, bottom
+background-image: url("../assets/coffee-break-cast.jpeg")
+background-size: cover
+
+
+# COFFEE BREAK
+
+## 11:30 - 11:45
+
+
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+## `r emo::ji("loudspeaker")` Heather Ratcliffe
+### _Research Software Engineer, University of Warwick_
+
+<br>
+
+> # *"Introduction to Sulis"*
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+## `r emo::ji("loudspeaker")` Mike Croucher
+### _Principal Customer Success Engineer, MathWorks_
+
+<br>
+
+> # *"Reproducible MATLAB on HPC"*
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+## `r emo::ji("loudspeaker")` Mozhgan Kabiri Chimeh
+### _GPU Developer Advocate, NVIDIA_
+
+<br>
+
+> # *"NVIDIA AI & HPC Containers"*
+
+---
+class: center, middle
+background-image: url("../assets/lunch-break.jpeg")
+background-size: cover
+
+# LUNCH
+
+## 13:00 - 14:00
 
 ---
 class: inverse
@@ -344,12 +382,20 @@ class: inverse
 
 ## ReproHack Objectives
 
-1. **Practical Experience in Reproducibility**
+1. **Reproduce a paper from associated code and data**
 
-3. **Feedback to Authors**
+3. **Feedback experiences to Authors**
 
 5. **Think more broadly about opportunities and challenges**
 
+<br>
+
+
+--
+
+### + **Explore Reproducibility of Computationally Intensive research**
+
+> #### All papers to be reproduced on the **Sulis High Performance Computing Platform!** 
 
 ---
 
@@ -394,36 +440,39 @@ knitr::include_graphics("assets/Hackathon.jpg")
 ```
 
 ---
+class: middle
+
+
+.pull-left[
 
 ## Selecting Papers
 
-.pull-left[
+
+### [reprohack.org/event/14](https://reprohack.org/event/14)
+
 - **Information submitted by authors:**
 
   - Languages / tools used (tags)
   
   - Why you should attempt the paper.
   
-- **No. attempts `r icons::fontawesome('recycle')`** No. times reproduction has been attempted
 
-- **Mean Repro Score `r icons::fontawesome('check-circle')`** Mean reproducibility score (out of 10)
-
-    - lower == harder!
     
-- Register paper using template in hackpad:
-    ```
-    ### **Paper:** <Title of the paper reproduced>
-    **Reviewers:** Reviewer 1, Reviewer 2 etc.
-    ```
+- Register paper using template in hackpad.
+
+- Create account on Sulis
+
 ]
 
 
 .pull-right[
+
+
 ```{r, echo=FALSE}
-knitr::include_graphics("assets/browse-paper-list.png")
+knitr::include_graphics("assets/paper-list-14.png")
 ```
 
-### [reprohack.org/paper/](https://reprohack.org/paper/)
+
 
 ]
 
@@ -645,7 +694,7 @@ class: inverse, center, middle
 
 # Participant Guidelines
 
-### [reprohack.org/participant_guidelines](https://www.reprohack.org/participant_guide)lines
+### [reprohack.org/participant_guidelines](https://www.reprohack.org/participant_guidelines)
 
 
 ---
@@ -653,175 +702,95 @@ class: inverse, center, middle
 
 ### Participation guidelines
 
-#### During talks information sessions and regroups
-- Please stay on mute until you are invited to speak.
-- Add questions for speakers on the hackpad
+#### During launch day
+- You have the rest of the afternoon to begin ReproHacking with help from organisers and mentors.
+- It is recommended you familiarise yourself with the feedback form early on.
 
-#### During break out work 
-- Try and engage as much as possible.
-- Feel free to mute, turn off camera and disconnect if you need to.
-- Feel free to move around and go say hello or help out in other rooms.
-- We encourage discussions in the break-out rooms but be mindful of others trying to work. The **main room** and **cafe** are always available for hanging out.
+#### During Drop in support sessions
+- We have four scheduled drop in sessions (see agenda for details)
+- RSE and HPC support will be available at these times
 
-### At any time
-- Feel free to add to the collaborative notes on the hackpad
-- Contact facilitators through the main chat
+#### At any time
+- Schedule time with your team to work on your project.
+- Contact and schedule support meetings with your mentors.
+- Feel free to add to the collaborative notes on the hackpad.
 
+#### Closing event
+
+- Each group will be expected to give a short presentation (5-10 mins) summarising their experiences and lessons learnt. Feel free to create slides if you wish.
+- Make sure you have completed your feedback form as a team.
+
+
+---
+class: center, middle
+background-image: url("../assets/question.jpeg")
+background-size: cover
+
+# Questions?
 
 ---
 class: inverse
 
 # Let's go! `r emo::ji("checkered_flag")`
 
-## 11:10 - 11:30
+## Now - 16:30
 
 ### `r emo::ji("mag_right")` Paper List review
 
-+ Have a look at the papers available for reproduction
++ Have a look at the [papers available for reproduction](https://reprohack.org/event/14)
 
 
 ### `r emo::ji("busts_in_silhouette")` Team formation / project registration
 
 + Fine to work individually
-+ Add your details to the [**hackpad: bit.ly/reprohack-hub-launch-hackpad**](https://bit.ly/reprohack-hub-launch-hackpad).
-+ Register your team and paper on the [**hackpad: bit.ly/reprohack-hub-launch-hackpad**](https://bit.ly/reprohack-hub-launch-hackpad)
++ Add your details to the [**hackpad: bit.ly/hpc-reprohack-hackpad**](https://bit.ly/hpc-reprohack-hackpad).
++ Register your team and paper on the [**hackpad: bit.ly/hpc-reprohack-hackpad**](https://bit.ly/hpc-reprohack-hackpad)
 
-### `r emo::ji("house")``r emo::ji("coffee")`Grab a coffee! 
+### Mentors will be assigned once papers selected
+
+
 
 ---
-class: inverse
+class: inverse, middle
 
-## 11:30 - 12:30 `r emo::ji("computer")` ReproHack I 
-### (break-out rooms) 
+# First day re-group `r emo::ji("thought_balloon")`
 
-Work on your papers. Feel free to discuss papers and collaboratively troubleshoot problems. Reach out through the main chat for help outside the group. Feel free to move groups or hang out in the main *room* or *cafe.* 
-
-> ### Before Lunch-time Regroup `r emo::ji("thought_balloon")`
-> #### Summarise group experiences
+> ### Summarise group experiences
 > - What approaches to reproducibility the papers taken.
 > - Anything in particular you like about the approaches so far?
 > - Anything you're having difficulty with?
 
----
-class: inverse
-
-## 12:30 - 12:45 `r emo::ji("speech_balloon")` Lunch regroup 
-
-### Welcome back
-
-***
-
-### Feedback group experiences
 
 ---
-class: inverse
+# Carry on ReproHacking!
 
-## 12:45 - 13:45 `r emo::ji("green_salad")``r emo::ji("burrito")` LUNCH 
+#### Join a Drop in Session if you need help.
 
-Feel free to disconnect or hang out in the main *room* or *cafe.* 
+#### Coordinate with your mentors for additional support.
 
----
-class: inverse
+#### Use ReproHack slack for communication:
 
-## 13:45 - 16:00  `r emo::ji("computer")` ReproHack II & III 
-### (break-out rooms) 
 
-### 14:45 - 15:00 COFFEE BREAK `r emo::ji("house")``r emo::ji("coffee")`
+[![Slack](https://img.shields.io/badge/slack-join%20us-brightgreen)](https://reprohack-autoinvite.herokuapp.com/) `#warwick-hpc-reprohack`
 
-Work on your papers. Feel free to discuss papers and collaboratively troubleshoot problems. Reach out through the main chat for help outside the group. Feel free to move groups or hang out in the main *room* or *cafe.* 
+#### Complete a feedback form for the authors
 
-> ### Before Final-time Regroup `r emo::ji("thought_balloon")`
-> #### Complete author feedback form `r emo::ji("writing_hand")`
-> - Discuss how you got on with your papers?
-> - Summarise final experiences of the group in hackpad
+
+### Regroup on the 31st March
 
 ---
-class: inverse
+class: center, middle
+background-image: url("../assets/question.jpeg")
+background-size: cover
 
-## `r emo::ji("loudspeaker")` Prof. Stephen Eglen  
-
-_Professor of Computational Neuroscience in the Department of Applied Mathematics and Theoretical Physics, University of Cambridge_
-
-<br>
-
-> ### *"CODECHECK: code review during peer review"*
+# Questions?
 
 ---
-class: inverse
-
-## 16:25 - 16:50 Final regroup `r emo::ji("speech_balloon")`
-
-- So, how did the groups get on? 
-
-- Final comments.
-
-
-- On hackpad: **Feedback**
-  + One thing you liked
-  + One thing that can be improved.
-
-
-
----
-class: inverse, center, middle
-
-# Closing Remarks
-
-
----
-class: inverse, center, middle
-
-# Resources
-
----
-
-## Resources
-
-- [**The Turing Way**](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science.
-
-- [**Statistical Analyses and Reproducible Research**](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.684.9629&rep=rep1&type=pdf): Gentleman and Temple Lang's introduction of the concept of Research Compendia
-
-- [**Packaging data analytical work reproducibly using R (and friends)**](https://peerj.com/preprints/3192/): how researchers can improve the reproducibility of their work using research compendia based on R packages and related tools
-
-- [How to Read a Research Compendium](https://arxiv.org/pdf/1806.09525.pdf): Introduction to existing conventions for research compendia and suggestions on how to utilise their shared properties in a structured reading process.
-
-- [Reproducible Research in R with rrtools](https://annakrystalli.me/rrtools-repro-research/): Workshop: Create a research compendium around materials associated with a published paper (text, data and code) using `rrtools`.  
-  - [**Example Compendium**](https://github.com/annakrystalli/rrcompendiumDTB): Demo Research compendium.
-
----
-## Did you enjoy ReproHacking? Get involved!
-
-.pull-left[
-# [reprohack.org](https://www.reprohack.org/) 
-]
-.pull-right[
-#### Chat to us:
-
-
-[![Slack](https://img.shields.io/badge/slack-join%20us-brightgreen)](https://reprohack-autoinvite.herokuapp.com/)
-]
-
-- ### Host your own event! 
-  train-the-trainer events coming up with the N8 CIR & [AIMOS conference](https://www.aimosconference.com/)
-- ### Submit your own papers!
-
----
-## Many ways to ReproHack!
-
-
-```{r, echo=FALSE, out.width="80%"}
-knitr::include_graphics("assets/workflow.png")
-```
-
-
-
----
+class: middle
 
 # THANK YOU ALL! `r emo::ji("pray")`
 
-- ### Thank you PARTICIPANTS for coming!
-- ### Thank you AUTHORS for submitting!
-- ### Thank to the N8 CIR for sponsoring!
+### See you on the 31st March 10:00 - 13:00
 
 
 # `r emo::ji("wave")`
@@ -832,3 +801,12 @@ knitr::include_graphics("assets/workflow.png")
 
 Images throughout the slides watermarked with **Scriberia** were created by [Scriberia](https://www.scriberia.co.uk/) for The Turing Way community and is used under a CC-BY licence 
 - _The Turing Way Community, & Scriberia. (2019, July 11). Illustrations from the Turing Way book dashes. Zenodo. http://doi.org/10.5281/zenodo.3332808_
+
+- Coffee Break Photo by <a href="https://unsplash.com/@mindspacestudio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mindspace Studio</a> on <a href="https://unsplash.com/s/photos/coffee-break?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+- Lunch Break Photo by <a href="https://unsplash.com/@ferhadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farhad Ibrahimzade</a> on <a href="https://unsplash.com/s/photos/lunch-break?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+- Question mark Photo by <a href="https://unsplash.com/@towfiqu999999?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Towfiqu barbhuiya</a> on <a href="https://unsplash.com/s/photos/questions?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  
+  
