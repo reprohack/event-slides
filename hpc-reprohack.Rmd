@@ -72,28 +72,30 @@ So yes, we will be ReproHacking, so **working with code and data to try and repr
 
 --
 
-> one day events using participants' laptops
-
-
-<br>
-
-Traditional format **excludes the examination of the reproducibility of computationally intensive research!**
+> #### One day events using participants' laptops
 
 --
 
-# Enter the 1st HPC ReproHack
+> #### Traditional format **excludes the examination of the reproducibility of computationally intensive research!**
+
+
+--
+
+<br>
+
+# Enter the 1st High Performance Computing ReproHack!
 
 
  
 ???
 
-But what's what really special about today's event is that, for the first time, we'll be using our purpose built ReproHack Hub.
+What's different:
 
-Right from the start of the project, we'd get requests from people that wanted to run their own events and we had tried really hard to create templates and make the infrastructure we used reproducible. 
+- Access to HPC cluster!
+- Longer format with opportunity to work in your own time
+- Mentors
 
-But it was still complicated, a lot of moving parts, held together with a lot duck tape. We always wanted a centralised hub that provided all the required infrastructure so that event organisers (including ourselves) but also authors submitting papers or participants submitting reviews, would find it easy to do what they needed to do and focus on the experience itself.
-
-It took a lot longer than we hoped but we are really so excited to share with you what we've created. 
+ 
 
 
 ---
@@ -103,6 +105,7 @@ class: center, middle
 
 ## EPSRC for funding
 
+ _Grant EP/W032201/1_
 
 
 ```{r, echo=FALSE, out.width="30%"}
@@ -112,15 +115,16 @@ knitr::include_graphics("assets/EPSRC_logo.png")
 
 ## Sulis for Compute Power
 
-#### _and **David Quigley** for securing the funding_
+### **David Quigley** for securing funding 
+### All mentors for papers & support
 
 
 
 ???
 
-I want to take the opportunity upfront to thank the N8 CIR, 
+I want to take the opportunity upfront to thank the EPSRC for our funding, 
 
-they've been firm supporters from early on, sponsored a number of previous events and also provided funding for developer time that got the hub off the ground so we really couldn't have  gotten here without their support.
+Sulis HPC framework for the compute power set aside especially for us
 
 ---
 class: inverse, center, middle
@@ -291,16 +295,18 @@ class: inverse
 
 # Talks
 
+
 ---
-class: inverse
+class: talk, middle
+![](assets/hex-logo-small.png)
 
 ## `r emo::ji("loudspeaker")` Martin Callaghan  
 
-#### _Research Computing Consultant and part of the Research Computing group at the University of Leeds_
+### _Research Computing Consultant, University of Leeds_
 
 <br>
 
-> ### *"HPC in the age of Data Science"*
+> # *"HPC in the age of Data Science"*
 
 
 
