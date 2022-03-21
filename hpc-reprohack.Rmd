@@ -34,7 +34,7 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#02CC98",
 ```
 
 
-## Welcome to the 1st ReproHack Hub Launch!
+## Welcome to the 1st ReproHack HPC ReproHack!
 
 <!-- Put the link to this slide here so people can follow -->
 
@@ -46,7 +46,7 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#02CC98",
 
 ***
 
-### Event Page: [bit.ly/hpc-reprohack-hub](https://bit.ly/hpc-reprohack)
+### Event Page: [bit.ly/hpc-reprohack](https://bit.ly/hpc-reprohack)
 
 Contains all event information and links to materials
 
