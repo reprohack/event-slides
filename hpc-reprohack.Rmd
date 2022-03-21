@@ -332,7 +332,7 @@ class: talk, middle
 
 ---
 class: center, middle, bottom
-background-image: url("../assets/coffee-break-cast.jpeg")
+background-image: url("assets/coffee-break-cast.jpeg")
 background-size: cover
 
 
