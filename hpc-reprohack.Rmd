@@ -50,20 +50,19 @@ style_duo_accent(primary_color = "#2D896B", secondary_color = "#02CC98",
 
 Contains all event information and links to materials
 
-### `r icons::fontawesome("twitter")` #ReproHackHub @ReproHack
+### `r icons::fontawesome("twitter")` @ReproHack #HPCReproHack
 
 
 ???
 
-Welcome everyone on behalf of the whole ReproHack team!
+Welcome everyone on behalf of the organising team, myself and David!
 
-So, not all of us could sadly be here today, but you have got myself, as well as Linda Nab, who'm you'll hear a bit more from shortly.
 
 I hope you've signed into the hackpad which has a lot of information, as does our event page. Both links should be in the chat.
 
-Which brings us to why we are all here today.
+If you want to tweet aout today you can tweet at the reprohack project and/or
 
-So yes, we will be ReproHacking, so **working with code and data to try and reproduce** submitted papers.
+Let me start with some context into what brings us all here today.
 
 ---
 
@@ -89,7 +88,13 @@ So yes, we will be ReproHacking, so **working with code and data to try and repr
  
 ???
 
-What's different:
+General concept. Authors submit papers with associated code & data and participants try and reproduce the work from submitted materials.
+
+Precludes computationally intensive research. A question we were getting at almost every event so we were keen to address it. So when David got in touch with us about a bid he was preparing and suggesting exactly that we jumped at the opportunity to collaborate.
+
+Which brings us to why we are here today! The 1st HPC reprohack!
+
+This is a pilot and we hope to come up with a blueprint for how to run such events. So what's different:
 
 - Access to HPC cluster!
 - Longer format with opportunity to work in your own time
@@ -105,13 +110,13 @@ class: center, middle
 
 ## EPSRC for funding
 
- _Grant EP/W032201/1_
-
 
 ```{r, echo=FALSE, out.width="30%"}
 knitr::include_graphics("assets/EPSRC_logo.png")
 ```
 
+
+ _Grant EP/W032201/1_
 
 ## Sulis for Compute Power
 
@@ -122,7 +127,7 @@ knitr::include_graphics("assets/EPSRC_logo.png")
 
 ???
 
-I want to take the opportunity upfront to thank the EPSRC for our funding, 
+I want to take the opportunity upfront to thank the EPSRC for the funding, 
 
 Sulis HPC framework for the compute power set aside especially for us
 
@@ -196,6 +201,10 @@ class: inverse
 
 # House Keeping:
 
+- ### No fire alarms expected
+- ### Water point
+- ### Toilets
+- ### Code of Conduct <https://reprohack.org/code-of-conduct>
 
 ???
 
