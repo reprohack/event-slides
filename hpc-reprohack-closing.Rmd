@@ -1,0 +1,282 @@
+---
+title: "Welcome to the HPC ReproHack Closing Event<br><img src='assets/hex-logo-small.png' height=200px>"
+author: "<br>**Event Hackpad:** <br>_bit.ly/hpc-reprohack-hackpad_"
+output:
+  xaringan::moon_reader:
+    css: [assets/css/reprohack-themer.css, assets/css/hpc-custom-styles.css]
+    lib_dir: libs
+    nature:
+      titleSlideClass: ["left"]
+      beforeInit: "https://platform.twitter.com/widgets.js"
+      dev: svg
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: ""
+---
+class: inverse
+
+## Welcome back!
+
+***
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+
+style_duo_accent(primary_color = "#2D896B", secondary_color = "#02CC98",
+                  base_font_size = "18px",
+  header_font_google = google_font("Poppins", "500"),
+  text_font_google   = google_font("Work Sans", "400", "400i"),
+  code_font_google   = google_font("Source Code Pro"),
+  title_slide_text_color = "white",
+  background_color = "white",
+  black_color = "#2a332c",
+  title_slide_background_image = "../background.jpg",
+  outfile = "assets/css/reprohack-themer.css"
+)
+```
+
+# RECAP
+
+---
+
+## ReproHack Objectives
+
+1. **Reproduce a paper from associated code and data**
+
+3. **Feedback experiences to Authors**
+
+5. **Think more broadly about opportunities and challenges**
+
+<br>
+
+
+--
+
+### + **Explore Reproducibility of Computationally Intensive research**
+
+> #### All papers to be reproduced on the **Sulis High Performance Computing Platform!** 
+
+
+---
+class: inverse, middle
+
+
+
+# Final Regroup `r emo::ji("speech_balloon")`
+
+--
+
+
+>  ## So, how did the groups get on? 
+
+
+
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+### Team 1:
+
+> ## PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals
+> 
+### **Mentor:** Giovanni Montana
+> 
+### **Reviewers:** Adam Smith, Claudia Viaro, David Ireland, Alex Beeson, Mianchu Wang
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+
+### Team 2:
+
+> ## Encapsulated nanowires: Boosting electronic transport in carbon nanotubes
+> 
+### **Mentor:**  Albert Bartok-Partay
+### **Reviewers:** Connor Allen, Joe Gilkes, Arkadiy Davydov
+
+---
+
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+### Team 3
+
+> ## Beyond the ponderomotive limit: Direct laser acceleration of relativistic electrons in sub-critical plasmas
+### **Mentor:**  Tom Goffrey
+### **Reviewers:** Andrew Angus
+
+---
+
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+### Team 4
+
+> ## Comminucation: Thermodynamics of stacking disorder in ice nuclei
+### **Mentor:**  Colm Connaughton
+### **Reviewers:** Omar Adesida, Kat Blow, Aravinthen Rajkumar
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+### Team 5
+
+> ##  Accelerating the prediction of large carbon clusters via structure search: Evaluation of machine-learning and classical potentials
+### **Mentor:** David Quigley
+### **Reviewers:** Benedict Saunders, Tanmoy Chakraborty
+
+---
+class: talk, middle
+![](assets/hex-logo-small.png)
+
+### Team 6
+
+> ## Droplet impact onto a spring-supported plate: analysis and simulations 
+### **Mentor:**  Radu Cimpeanu
+### **Reviewers:** Harvey Devereux, Peter Lewin-Jones
+
+
+---
+class: center, middle, inverse
+background-image: url("assets/bubble.png")
+background-size: cover
+
+# Questions?
+# Comments?
+
+
+---
+class: inverse, middle
+
+# WHAT NEXT?
+
+---
+class: talk 
+
+# END OF EVENT  Checklist
+
+## `r emo::ji("white_check_mark")` **Author feedback**
+
+###  Please ensure you have  completed your review on  the hub.
+
+## `r emo::ji("white_check_mark")` **Event feedback**
+#### On  the hackpad, please let us know: 
+ + ### One thing you enjoyed.
+ + ### One thing that can be improved.
+
+---
+ 
+
+## Did you enjoy ReproHacking? 
+## Get involved!
+
+.pull-left[
+# [reprohack.org](https://www.reprohack.org/) 
+]
+.pull-right[
+#### Chat to us:
+
+
+[![Slack](https://img.shields.io/badge/slack-join%20us-brightgreen)](https://reprohack-autoinvite.herokuapp.com/)
+]
+
+- ### Host your own event! 
+  train-the-trainer event coming up at CW20
+  
+- ### Submit your own papers!
+
+---
+class: inverse, middle, center
+
+## Many ways to ReproHack!
+
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("assets/workflow.png")
+```
+
+
+
+---
+# CODE CHECK  
+
+.pull-left.center[
+
+### [codecheck.org.uk](https://codecheck.org.uk/)
+
+![](https://codecheck.org.uk/img/codecheck_logo.svg)
+
+_"Independent time-stamped runs conducted by codecheckers will award a “certificate of executable computation”_
+
+
+[![](https://codecheck.org.uk/img/codeworks-badge.svg)](https://zenodo.org/record/3865491#.XwL4VZNKhfU)
+
+]
+
+.pull-right[
+
+```{r, out.height="500", echo=FALSE}
+knitr::include_graphics("assets/codecheck.pdf")
+```
+
+]
+
+
+---
+
+## [ReScience C](http://rescience.github.io/)
+
+> **ReScience C** is an open-access peer-reviewed journal that targets computational research and encourages the **explicit replication** of already published research, promoting new and open-source implementations in order to ensure that the original research is reproducible.
+
+
+
+### What is a **Replication:** 
+- Repeating a published protocol
+- Respecting its spirit and intentions
+-  **Varying the technical details**, e.g. using different software, initial conditions, etc.
+
+#### Change something that everyone believes shouldn’t matter, and see if the scientific conclusions are affected 
+
+
+
+---
+
+
+
+## Resources
+
+- [**The Turing Way**](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science.
+
+- [**Statistical Analyses and Reproducible Research**](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.684.9629&rep=rep1&type=pdf): Gentleman and Temple Lang's introduction of the concept of Research Compendia
+
+- [**Packaging data analytical work reproducibly using R (and friends)**](https://peerj.com/preprints/3192/): how researchers can improve the reproducibility of their work using research compendia based on R packages and related tools
+
+- [How to Read a Research Compendium](https://arxiv.org/pdf/1806.09525.pdf): Introduction to existing conventions for research compendia and suggestions on how to utilise their shared properties in a structured reading process.
+
+
+
+
+
+---
+class: talk
+
+# THANK YOU ALL! `r emo::ji("pray")`
+
+- ### Thank you PARTICIPANTS for coming!
+- ### Thank you MENTORS for supporting!
+- ### Thank you AUTHORS for submitting!
+- ### Thank to the EPSRC for sponsoring!
+
+
+# `r emo::ji("wave")`
+
+---
+class: center
+background-image: url("https://i.giphy.com/media/BWTZOE4vnj3gs/giphy.webp")
+background-size: cover
+
+## .text-box[GO FORTH AND BE REPRODUCIBLE]
