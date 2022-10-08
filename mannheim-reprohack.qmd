@@ -1,0 +1,673 @@
+---
+format: 
+  revealjs:
+    theme: [assets/css/reprohack.scss]
+    logo: assets/hex-logo-small.png
+    footer: "[reprohack.org](https://www.reprohack.org/) &nbsp;&nbsp; **#MannheimReproHack &nbsp;&nbsp; #OSD22Mannheim**"
+editor: visual
+from: markdown+emoji
+params:
+    hackpad_bitly: "https://bit.ly/mheim-reprohack-hackpad"
+---
+
+## Welcome to the Mannheim Open Science Day Reprohack {.title-slide background-image="https://raw.githubusercontent.com/reprohack/event-slides/main/assets/background.jpg"}
+
+
+```{r, echo = FALSE}
+hackpad_url <- ifelse(
+    is.null(params$hackpad_bitly),
+    "",
+    params$hackpad_bitly
+)
+
+hackpad_url_text <- ifelse(
+    is.null(params$hackpad_bitly),
+    "",
+    gsub("https://", "", hackpad_url, fixed = TRUE)
+)
+```
+
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](assets/hex-logo-small.png)
+:::
+
+::: {.column width="58%"}
+
+<br>
+
+Please sign in on the ReproHack Hackpad! :writing_hand:
+
+[`r hackpad_url_text`](`r hackpad_url`)
+:::
+
+::::
+
+---
+
+
+## Thank you ! :pray:
+
+### _University Of Mannheim Open Science Office!_
+
+<https://www.uni-mannheim.de/open-science/open-science-office/>
+
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+
+```{r, echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.uni-mannheim.de/typo3conf/ext/uma_site/Resources/Public/Images/Icons/logo-universitaet-mannheim-en.svg")
+```
+
+:::
+
+::: {.column width="46%"}
+
+
+```{r, echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.uni-mannheim.de/media/Einrichtungen/open_science/images/Logo_Open-Science-Office_Wort-Bild%40400px.png")
+```
+
+:::
+
+::::
+
+<br> 
+
+Especially:
+
+- Philipp Zumstein :sparkles:
+
+- David Morgan :sparkles:
+
+---
+
+## Agenda {.scrollable .smaller .inverse}
+
+
+|   Time    |   Event   |
+|---    |---    |
+|   10:00   |    Welcome and Orientation    |
+|   10:10   |    Ice breaker session in groups      |
+|   10:20   |    **TALK: Joel Nitta: 'Reproducible analyses with targets and docker: An example from ReproHack'**    |
+|   10:45   |    Anna Krystalli: 'Tips and Tricks for Reproducing and Reviewing.'     |
+|   11:10   |    Select Papers, Chat and coffee     |
+|   11:30   |    Round I of ReproHacking (break-out rooms)      |
+|   12:30   |    Re-group and sharing of experiences    |
+|   12:45   |    LUNCH      |
+|   13:45   |    Round II of ReproHacking (break-out rooms)     |
+|   14:45   |    Coffee break   |
+|   15:00   |    Round III of ReproHacking (break-out rooms) - Complete Feedback form   |
+|   16:00   |    **TALK: Camille Landesvatter: Writing reproducible manuscripts in R Markdown and Pagedown**  |
+|   16:25   |    Re-group and sharing of experiences    |
+|   16:50   |    Feedback and Closing   |
+
+---
+
+## House Keeping:
+
+- **Water Point:**
+- **Toilets:**
+- **WiFi:**
+
+
+---
+
+
+
+## ReproHack hackpad  :arrow_right: [hackmd.io](https://hackmd.io/s/features) notepad
+
+
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("assets/hackmd.png")
+```
+
+
+# Ice breaker:  Introductions
+
+<!-- Use this section as an ice-breaker. Introduce yourself, then allow others to 
+go around the room and introduce themselves too -->
+
+<!-- Add details about yourself the organiser here: -->
+
+## Who am I?
+
+> ### Dr Anna Krystalli (@annakrystalli){.url}
+> 
+> - Research Software Engineering Consultant [`r-rse`](https://www.r-rse.eu/)
+>
+> - 2019 Fellow _Software Sustainability Institute_
+>
+> - Software Peer Review Editor _rOpenSci_ 
+>
+> - Core Team Member _ReproHack_
+
+
+
+---
+
+## Why am I here?
+
+> I believe there's lots to learn about Reproducibility from working with other people's materials and engaging with real published research code and data.
+
+
+
+---
+
+## Who is my favorite animated character?
+
+> Stitch!
+>
+> ![](https://media3.giphy.com/media/95MU6SEzeLnUc/giphy.gif?cid=790b76115d11033236595055776d483b&rid=giphy.gif)
+
+
+## Your turn
+
+
+>
+> - ### Who are you?
+>
+> - ### Why are you here?
+>
+> - ### Who is your favorite animated character?
+
+
+
+## TALK {.talk}
+
+### :loudspeaker: Joel Nitta 
+#### _Project Research Associate in the Iwasaki Lab at the University of Tokyo._
+
+
+
+> ### *'Reproducible analyses with targets and docker: An example from ReproHack'*
+
+
+
+# Tips for Reproducing & Reviewing
+
+---
+
+## ReproHack Objectives
+
+1. **Practical Experience in Reproducibility**
+
+3. **Feedback to Authors**
+
+5. **Think more broadly about opportunities and challenges**
+
+
+---
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+
+### Code of Conduct
+
+Event governed by **ReproHack Code of Conduct** 
+
+<https://reprohack.org/code-of-conduct>
+
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("assets/1728_TURI_Book sprint_7 community_040619.jpg")
+```
+
+
+:::
+
+::: {.column width="46%"}
+
+### Additional Considerations
+
+- #### Reproducibility is hard!
+- #### Submitting authors are incredibly brave!
+
+### Thank you Authors! :raised_hands: 
+
+- #### Without them there would be no ReproHack.
+- #### Show gratitude and appreciation for their efforts. :pray: 
+- #### Constructive criticism only please!
+
+:::
+
+::::
+
+
+# :mag: Reproducing & Reviewing
+
+
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("assets/Hackathon.jpg")
+```
+
+---
+
+## Selecting Papers {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+- **Information submitted by authors:**
+
+  - Languages / tools used (tags)
+  
+  - Why you should attempt the paper.
+  
+- **No. attempts `r icons::fontawesome('recycle')`** No. times reproduction has been attempted
+
+- **Mean Repro Score `r icons::fontawesome('check-circle')`** Mean reproducibility score (out of 10)
+
+    - lower == harder!
+    
+- Register paper using template in hackpad:
+
+    ```
+    ### **Paper:** <Title of the paper reproduced>
+    **Reviewers:** Reviewer 1, Reviewer 2 etc.
+    ```
+    
+:::
+
+::: {.column width="46%"}
+
+```{r, echo=FALSE}
+knitr::include_graphics("assets/browse-paper-list.png")
+```
+
+### [reprohack.org/paper/](https://reprohack.org/paper/){.url}
+
+:::
+
+::::
+
+
+
+
+
+
+# Review as an auditor :bookmark_tabs:
+
+
+
+# :mag: For FAIR materials
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("assets/FAIRPrinciples.jpg")
+```
+
+
+---
+
+::: {.panel-tabset}
+
+
+## **Access**
+
+<br>
+
+- How **easy** was it to **gain** access to the materials?
+
+- Did you manage to download all the files you needed?
+
+## **Installation**
+
+<br>
+
+- How **easy / automated** was **installation**?
+
+- Did you have any problems?
+
+- How did you solve them?
+
+## **Data**
+
+<br>
+
+- Were **data clearly separated from code and other items**?
+
+- Were **large data files deposited in a trustworthy data repository** and referred to using a **persistent identifier**?
+
+- Were **data documented** ...somehow...
+
+
+## **Documentation**
+
+<br>
+
+Was there **adequate documentation** describing:
+- how to **install** necessary software including non-standard dependencies?
+
+- how to **use** materials to reproduce the paper?
+
+- how to **cite** the materials, ideally in a form that can be copy and pasted?
+
+
+## **Analysis**
+
+**Were you able to fully reproduce** the paper? 
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+[:white_check_mark:]{.larger}
+
+- **How automated** was the process of reproducing the paper?
+
+- **How easy was it to link** analysis **code** to:
+   - the **plots** it generates
+   - **sections in the manuscript** in which it is described and results reported
+   
+:::
+
+::: {.column width="46%" .smaller}
+
+[:no_entry_sign:]{.larger}
+
+ - Were there **missing dependencies?**
+ 
+ - Was the **computational environment not adequately described** / captured?
+ 
+ - Was there **bugs** in the code?
+ 
+ - Did **code run but results (e.g. model outputs, tables, figures) differ** to those published? By **how much?**
+
+:::
+
+::::
+
+
+
+:::
+
+
+
+
+
+
+# Review as a user :video_game:{.centre}
+
+## Useful User Perspectives
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+
+### New User
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("https://25.media.tumblr.com/30906cccedfe97a3d5450a23359ca298/tumblr_ml72i2eL6t1rsudnqo1_500.gif")
+```
+
+
+
+:::
+
+::: {.column width="46%"}
+
+
+### Invested User
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("https://media.giphy.com/media/9K2nFglCAQClO/source.gif")
+```
+
+:::
+
+::::
+
+
+---
+
+<br>
+
+#### What did you find easy / intuitive?
+> Was the file structure and file naming informative / intuitive?
+> Was the analysis workflow easy to follow? 
+> Was there missing / confusing documentation?
+
+
+#### What did you find confusing / difficult
+> Identify pressure points. Constructive suggestions?
+
+
+
+#### What did you enjoy?
+> Identify aspects that worked well.
+
+
+
+
+# Feedback :speech_balloon:
+
+---
+
+## Feedback as a community member
+
+:::: {.columns}
+
+::: {.column width="46%"}
+
+
+#### Acknowledge author effort
+
+#### Give feedback in good faith
+
+#### Focus on community benefits and system level solutions
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("assets/1728_TURI_Book sprint_11 community_040619.jpg")
+```
+
+:::
+
+::: {.column width="46%"}
+
+
+> #### _Help build convention on what a Research Compendium should be and how we should be able to use it_
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("assets/ResearchCompendium.jpg")
+```
+
+
+:::
+
+::::
+
+---
+
+#### **tl;dr: Don't be this guy!** {.url}
+
+```{r, echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://www.reactiongifs.com/r/O_o.gif")
+```
+
+
+
+## Submit review
+
+1. ### Sign up / Log in
+
+2. ### New Review: [reprohack.org/review/new](https://www.reprohack.org/review/new){.url}
+  
+```{r, echo=FALSE, out.width="70%"}
+  knitr::include_graphics("assets/new-review.png")
+  
+```
+
+
+## Participant Guidelines
+
+### [reprohack.org/participant_guidelines](https://www.reprohack.org/participant_guidelines){.url}
+
+
+
+# Let's go! :checkered_flag: {.huge}
+
+## 11:10 - 11:30
+
+<hr>
+<br>
+
+
+### :mag_right: Paper List review
+
++ Have a look at the papers available for reproduction
+
+
+### :busts_in_silhouette: Team formation / project registration
+
++ Fine to work individually
++ Add your details to the [**hackpad: `r hackpad_url_text`**](`r hackpad_url`).
++ Register your team and paper on the [**hackpad: `r hackpad_url_text`**](`r hackpad_url`)
+
+### :house::coffee: Grab a coffee! 
+
+
+## 11:30 - 12:30 :computer: ReproHack I 
+
+<hr>
+<br>
+
+Work on your papers. Feel free to discuss papers and collaboratively troubleshoot problems.
+
+<br> 
+
+> ### Before Lunch-time Regroup :thought_balloon:
+> #### Summarise group experiences
+> - What approaches to reproducibility the papers taken.
+> - Anything in particular you like about the approaches so far?
+> - Anything you're having difficulty with?
+
+
+## 12:30 - 12:45 :speech_balloon: Lunch regroup 
+
+<hr>
+<br>
+
+### Feedback group experiences
+
+
+
+## 12:45 - 13:45 :green_salad::burrito: LUNCH 
+
+<hr>
+<br>
+
+
+
+Lunch is in the: 
+
+
+## 13:45 - 16:00  :computer: ReproHack II & III 
+
+
+<hr>
+<br>
+
+
+### 14:45 - 15:00 COFFEE BREAK :house::coffee:
+
+Work on your papers. Feel free to discuss papers and collaboratively troubleshoot problems. 
+
+>
+> ### Before Final-time Regroup :thought_balloon:
+> #### Complete author feedback form :writing_hand:
+> - Discuss how you got on with your papers?
+> - Summarise final experiences of the group in hackpad
+
+
+
+## TALK {.talk}
+
+### :loudspeaker: Camille Landesvatter  
+
+_Research associate at the Mannheim Center for European Social Research (MZES)_
+
+<br>
+
+> ### *'Writing reproducible manuscripts in R Markdown and Pagedown'*
+
+
+
+## 16:25 - 16:50 Final regroup :speech_balloon:
+
+- So, how did the groups get on? 
+
+- Final comments.
+
+
+- On hackpad: **Feedback**
+  + One thing you liked
+  + One thing that can be improved.
+
+# Closing Remarks
+
+
+## Resources
+
+- [**The Turing Way**](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science.
+
+- [**Statistical Analyses and Reproducible Research**](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.684.9629&rep=rep1&type=pdf): Gentleman and Temple Lang's introduction of the concept of Research Compendia
+
+- [**Packaging data analytical work reproducibly using R (and friends)**](https://peerj.com/preprints/3192/): how researchers can improve the reproducibility of their work using research compendia based on R packages and related tools
+
+- [How to Read a Research Compendium](https://arxiv.org/pdf/1806.09525.pdf): Introduction to existing conventions for research compendia and suggestions on how to utilise their shared properties in a structured reading process.
+
+- [Reproducible Research in R with rrtools](https://annakrystalli.me/rrtools-repro-research/): Workshop: Create a research compendium around materials associated with a published paper (text, data and code) using `rrtools`.  
+  - [**Example Compendium**](https://github.com/annakrystalli/rrcompendiumDTB): Demo Research compendium.
+
+
+## Did you enjoy ReproHacking? Get involved!
+
+
+### [reprohack.org](https://www.reprohack.org/) {.url}
+
+
+
+#### Chat to us: [![Slack](https://img.shields.io/badge/slack-join%20us-brightgreen)](https://reprohack-autoinvite.herokuapp.com/)
+
+
+
+- ### Host your own event! 
+ Look out for train-the-trainer events!
+ 
+- ### Submit your own papers!
+
+
+## Many ways to ReproHack!
+
+
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("assets/workflow.png")
+```
+
+
+
+## THANK YOU ALL! :pray:
+
+- ### Thank you PARTICIPANTS for coming!
+- ### Thank you AUTHORS for submitting!
+- ### Thank to the UoMannheim Open Science Office for sponsoring!
+
+
+### :wave:
+
+## Acknowledgements
+
+Images throughout the slides watermarked with **Scriberia** were created by [Scriberia](https://www.scriberia.co.uk/) for The Turing Way community and is used under a CC-BY licence:
+
+- _The Turing Way Community, & Scriberia. (2019, July 11). Illustrations from the Turing Way book dashes. Zenodo. <http://doi.org/10.5281/zenodo.3332808>_
