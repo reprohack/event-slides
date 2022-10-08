@@ -344,6 +344,7 @@ knitr::include_graphics("assets/FAIRPrinciples.jpg")
 <br>
 
 Was there **adequate documentation** describing:
+
 - how to **install** necessary software including non-standard dependencies?
 
 - how to **use** materials to reproduce the paper?
