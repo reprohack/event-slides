@@ -111,9 +111,9 @@ Especially:
 
 ## House Keeping:
 
-- **Water Point:**
-- **Toilets:**
-- **WiFi:**
+- **Toilets:** Downstrairs one level
+
+- **WiFi:** **uni-event** `ReproHack2022`
 
 
 ---
@@ -570,7 +570,7 @@ Work on your papers. Feel free to discuss papers and collaboratively troubleshoo
 
 
 
-Lunch is in the: 
+Lunch is just outside! 
 
 
 ## 13:45 - 16:00  :computer: ReproHack II & III 
