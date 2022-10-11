@@ -115,6 +115,7 @@ Especially:
 
 - **WiFi:** **uni-event** `ReproHack2022`
 
+- **Want to join in on Joel's Live demo?** You'll need to install Docker! [docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 ---
 
